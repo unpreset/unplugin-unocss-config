@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "cross-env DEBUG=unplugin:unocss-config:* vite"
+    "dev": "cross-env DEBUG=unplugin:unocss-config vite"
   },
   "dependencies": {
     "vue": "^3.2.45"
