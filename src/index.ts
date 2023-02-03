@@ -13,6 +13,7 @@ export default createUnplugin<Options | undefined>((options) => {
   options = options || {
     dts: isPackageExists('typescript'),
   }
+
   return {
     name: 'unplugin-unocss-config',
     enforce: 'pre',
@@ -20,6 +21,7 @@ export default createUnplugin<Options | undefined>((options) => {
       async config(config) {
         const result = await loadConfig(config.root, options?.path)
         const uno = createGenerator(result.config)
+
         return {
           define: {
             'import.meta.env.__UNO__': uno,
