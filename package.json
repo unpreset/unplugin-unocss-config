@@ -83,30 +83,30 @@
     "test": "vitest"
   },
   "dependencies": {
-    "unplugin": "^1.0.1"
+    "unplugin": "^1.3.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.35.1",
+    "@antfu/eslint-config": "^0.38.5",
     "@types/debug": "^4.1.7",
     "@types/fs-extra": "^11.0.1",
-    "@types/node": "^18.11.18",
-    "@unocss/config": "^0.49.4",
-    "@unocss/core": "^0.49.4",
-    "@unocss/preset-mini": "^0.49.4",
-    "bumpp": "^8.2.1",
+    "@types/node": "^18.16.0",
+    "@unocss/config": "^0.51.8",
+    "@unocss/core": "^0.51.8",
+    "@unocss/preset-mini": "^0.51.8",
+    "bumpp": "^9.1.0",
     "chalk": "^5.2.0",
     "debug": "^4.3.4",
-    "eslint": "^8.33.0",
+    "eslint": "^8.39.0",
     "esno": "^0.16.3",
     "fast-glob": "^3.2.12",
-    "fs-extra": "^11.1.0",
-    "nodemon": "^2.0.20",
-    "rimraf": "^4.1.2",
-    "rollup": "^3.13.0",
-    "tsup": "^6.5.0",
-    "typescript": "^4.9.5",
-    "vite": "^4.1.1",
-    "vitest": "^0.28.4",
-    "webpack": "^5.75.0"
+    "fs-extra": "^11.1.1",
+    "nodemon": "^2.0.22",
+    "rimraf": "^5.0.0",
+    "rollup": "^3.21.0",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.1",
+    "vitest": "^0.30.1",
+    "webpack": "^5.80.0"
   }
 }
