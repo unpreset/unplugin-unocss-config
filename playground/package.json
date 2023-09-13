@@ -10,6 +10,7 @@
     "@vitejs/plugin-vue": "^4.2.0",
     "cross-env": "^7.0.3",
     "unocss": "^0.51.8",
+    "unocss-preset-useful": "^0.2.5",
     "vite": "^4.3.1",
     "vite-plugin-inspect": "^0.7.24"
   }

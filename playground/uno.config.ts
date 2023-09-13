@@ -1,28 +1,28 @@
 import {
   defineConfig,
-  presetAttributify,
-  presetIcons,
-  presetUno,
   transformerCompileClass,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
+import { presetUseful } from 'unocss-preset-useful'
 
 export default defineConfig({
   theme: {
     fontFamily: {
       sans: '\'Inter\', sans-serif',
-      // mono: '\'Fira Code\', monospace',
+      mono: '\'Fira Code\', monospace',
     },
   },
   presets: [
-    presetAttributify(),
-    presetUno({ preflight: false }),
-    presetIcons({
-      extraProperties: {
-        'display': 'inline-block',
-        'vertical-align': 'middle',
+    presetUseful({
+      typography: true,
+      icons: {
+        extraProperties: {
+          'display': 'inline-block',
+          'vertical-align': 'middle',
+        },
       },
+      remToPx: true,
     }),
   ],
   transformers: [

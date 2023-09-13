@@ -1,5 +1,5 @@
-import { resolve } from 'path'
-import fs from 'fs'
+import { resolve } from 'node:path'
+import fs from 'fs-extra'
 import { createUnplugin } from 'unplugin'
 import { createGenerator } from '@unocss/core'
 import { loadConfig } from '@unocss/config'
@@ -36,7 +36,7 @@ export default createUnplugin<Options | undefined>((options) => {
         if (!dts)
           return
 
-        generateDts(dts)
+        await generateDts(dts)
       },
     },
   }
@@ -73,9 +73,9 @@ interface ImportMeta {
   return content
 }
 
-function generateDts(path: string) {
+async function generateDts(path: string) {
   let content = ''
-  if (fs.existsSync(path)) {
+  if (await fs.exists(path)) {
     content = prepareContent(fs.readFileSync(path, { encoding: 'utf-8' }))
 
     log('generateDts match', content)
@@ -103,4 +103,3 @@ function generateDts(path: string) {
     //     fs.writeFileSync(path, content, { encoding: 'utf-8' })
   }
 }
-

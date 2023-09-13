@@ -9,6 +9,6 @@ export default defineConfig({
     vue(),
     UnoCSS(),
     Inspect(),
-    Unplugin({ dts: true }),
+    // Unplugin({ dts: true }),
   ],
 })
