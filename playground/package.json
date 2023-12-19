@@ -1,17 +1,18 @@
 {
+  "type": "module",
   "private": true,
   "scripts": {
-    "dev": "cross-env DEBUG=unplugin:unocss-config vite"
+    "dev": "cross-env DEBUG=unplugin-unocss-config:* vite"
   },
   "dependencies": {
-    "vue": "^3.2.47"
+    "vue": "^3.3.13"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.2.0",
+    "@vitejs/plugin-vue": "^4.5.2",
     "cross-env": "^7.0.3",
-    "unocss": "^0.51.8",
-    "unocss-preset-useful": "^0.2.5",
-    "vite": "^4.3.1",
-    "vite-plugin-inspect": "^0.7.24"
+    "unocss": "^0.58.0",
+    "unocss-preset-useful": "^0.3.4",
+    "vite": "^5.0.10",
+    "vite-plugin-inspect": "^0.8.1"
   }
 }

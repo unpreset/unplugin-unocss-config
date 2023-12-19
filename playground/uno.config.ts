@@ -1,6 +1,5 @@
 import {
   defineConfig,
-  transformerCompileClass,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
@@ -15,19 +14,25 @@ export default defineConfig({
   },
   presets: [
     presetUseful({
-      typography: true,
       icons: {
         extraProperties: {
           'display': 'inline-block',
           'vertical-align': 'middle',
         },
       },
-      remToPx: true,
     }),
   ],
   transformers: [
-    transformerCompileClass(),
     transformerVariantGroup(),
     transformerDirectives(),
+  ],
+  preflights: [
+    {
+      getCSS() {
+        return `html, body{
+          background-color: #222;
+        }`
+      },
+    },
   ],
 })

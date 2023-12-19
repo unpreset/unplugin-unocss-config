@@ -1,12 +1,21 @@
 {
   "compilerOptions": {
     "target": "esnext",
+    "lib": ["esnext", "dom"],
     "module": "esnext",
-    "lib": ["esnext", "DOM"],
     "moduleResolution": "node",
-    "esModuleInterop": true,
+    "resolveJsonModule": true,
     "strict": true,
     "strictNullChecks": true,
-    "resolveJsonModule": true
-  }
+    "esModuleInterop": true
+  },
+  "exclude": [
+    "**/dist/**",
+    "**/node_modules/**",
+    "**/playground/**",
+    "**/examples/**",
+    "**/fixtures/**",
+    "**/test/dts/**",
+    "**/*.js"
+  ]
 }
