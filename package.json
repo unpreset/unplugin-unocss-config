@@ -4,13 +4,13 @@
   "version": "0.0.1",
   "description": "Register global imports on demand for Vite and Webpack",
   "license": "MIT",
-  "homepage": "https://github.com/antfu/unplugin-starter#readme",
+  "homepage": "https://github.com/zyyv/unplugin-unocss-config#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antfu/unplugin-starter.git"
+    "url": "git+https://github.com/zyyv/unplugin-unocss-config.git"
   },
   "bugs": {
-    "url": "https://github.com/antfu/unplugin-starter/issues"
+    "url": "https://github.com/zyyv/unplugin-unocss-config/issues"
   },
   "keywords": [
     "unplugin",
@@ -24,6 +24,9 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
+    },
+    "./clent":{
+      "types": "./client.d.ts"
     },
     "./vite": {
       "types": "./dist/vite.d.ts",
@@ -76,9 +79,9 @@
     "dev": "tsup --watch src",
     "build:fix": "esno scripts/postbuild.ts",
     "lint": "eslint .",
-    "play": "npm -C playground run dev",
-    "prepublishOnly": "npm run build",
-    "release": "bumpp && npm publish",
+    "play": "pnpm -C playground run dev",
+    "prepublishOnly": "pnpm run build",
+    "release": "bumpp && pnpm publish",
     "start": "esno src/index.ts",
     "test": "vitest"
   },
@@ -86,7 +89,7 @@
     "unplugin": "^1.5.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.4.6",
+    "@zyyv/eslint-config": "^2.4.6",
     "@types/debug": "^4.1.12",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^20.10.5",

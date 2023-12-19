@@ -97,6 +97,9 @@ importers:
       unocss-preset-useful:
         specifier: ^0.3.4
         version: 0.3.4(unocss@0.58.0)
+      unplugin-unocss-config:
+        specifier: workspace:*
+        version: link:..
       vite:
         specifier: ^5.0.10
         version: 5.0.10(@types/node@20.10.5)
