@@ -2,7 +2,7 @@
   "name": "unplugin-unocss-config",
   "type": "module",
   "version": "0.0.1",
-  "description": "Register global imports on demand for Vite and Webpack",
+  "description": "Use uno config in run-time",
   "license": "MIT",
   "homepage": "https://github.com/zyyv/unplugin-unocss-config#readme",
   "repository": {
@@ -17,7 +17,9 @@
     "vite",
     "webpack",
     "rollup",
-    "transform"
+    "transform",
+    "unocss",
+    "unpreset"
   ],
   "exports": {
     ".": {
