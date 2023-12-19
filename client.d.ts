@@ -7,7 +7,7 @@ declare const __UNO_CONFIG__: import('unocss').UserConfig
 declare const __UNO_THEME__: import('unocss').UserConfig['theme']
 
 interface ImportMetaEnv {
-  readonly __UNO__: Pick<ReturnType<typeof import('unocss').createGenerator>, 'config' | 'userConfig' | 'version'| 'blocked'>
+  readonly __UNO__: Pick<ReturnType<typeof import('unocss').createGenerator>, 'config' | 'userConfig' | 'version' | 'blocked'>
   readonly __UNO_CONFIG__: import('unocss').UserConfig
   readonly __UNO_THEME__: import('unocss').UserConfig['theme']
 }

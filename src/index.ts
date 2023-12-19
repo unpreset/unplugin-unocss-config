@@ -1,11 +1,10 @@
 import { createUnplugin } from 'unplugin'
 import { createGenerator } from '@unocss/core'
 import { loadConfig } from '@unocss/config'
+import type { ViteDevServer } from 'vite'
 import type { Options } from './types'
-import { ViteDevServer } from 'vite'
 
 export default createUnplugin<Options | undefined>((options) => {
-
   let uno: ReturnType<typeof createGenerator>
 
   return {
@@ -23,7 +22,7 @@ export default createUnplugin<Options | undefined>((options) => {
             'import.meta.env.__UNO_THEME__': uno.config.theme,
             '__UNO__': uno,
             '__UNO_CONFIG__': uno.config,
-            '__UNO_THEME__': uno.config.theme
+            '__UNO_THEME__': uno.config.theme,
           },
         }
       },
