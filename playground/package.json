@@ -1,5 +1,4 @@
 {
-  "type": "module",
   "private": true,
   "scripts": {
     "dev": "cross-env DEBUG=unplugin-unocss-config vite"
