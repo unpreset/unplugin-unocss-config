@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "play": "pnpm -C playground run dev",
     "prepublishOnly": "pnpm run build",
-    "release": "bumpp && pnpm publish"
+    "release": "bumpp -r && pnpm -r publish --access public --no-git-checks"
   },
   "dependencies": {
     "unplugin": "^1.5.1"
