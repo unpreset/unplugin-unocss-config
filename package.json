@@ -24,7 +24,7 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
+      "require": "./dist/index.js"
     },
     "./clent": {
       "types": "./client.d.ts"
@@ -32,21 +32,21 @@
     "./vite": {
       "types": "./dist/vite.d.ts",
       "import": "./dist/vite.mjs",
-      "require": "./dist/vite.cjs"
+      "require": "./dist/vite.js"
     },
     "./nuxt": {
       "types": "./dist/nuxt.d.ts",
       "import": "./dist/nuxt.mjs",
-      "require": "./dist/nuxt.cjs"
+      "require": "./dist/nuxt.js"
     },
     "./types": {
       "types": "./dist/types.d.ts",
       "import": "./dist/types.mjs",
-      "require": "./dist/types.cjs"
+      "require": "./dist/types.js"
     },
     "./*": "./*"
   },
-  "main": "dist/index.cjs",
+  "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "typesVersions": {

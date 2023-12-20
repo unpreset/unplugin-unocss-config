@@ -12,6 +12,7 @@ async function run() {
     cwd: resolve(dirname(fileURLToPath(import.meta.url)), '../dist'),
   })
   for (const file of files) {
+    // eslint-disable-next-line no-console
     console.log(chalk.cyan.inverse(' POST '), `Fix ${basename(file)}`)
     let code = await fs.readFile(file, 'utf8')
     code = code.replace('exports.default =', 'module.exports =')
