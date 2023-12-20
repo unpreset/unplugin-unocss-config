@@ -1,7 +1,7 @@
 {
   "name": "unplugin-unocss-config",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Use uno config in run-time",
   "license": "MIT",
   "homepage": "https://github.com/zyyv/unplugin-unocss-config#readme",
