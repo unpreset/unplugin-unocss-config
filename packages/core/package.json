@@ -1,0 +1,92 @@
+{
+  "name": "unplugin-unocss-config",
+  "version": "0.0.4",
+  "description": "Use uno config in run-time",
+  "license": "MIT",
+  "homepage": "https://github.com/zyyv/unplugin-unocss-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zyyv/unplugin-unocss-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zyyv/unplugin-unocss-config/issues"
+  },
+  "keywords": [
+    "unpreset",
+    "unocss",
+    "unocss-config",
+    "unplugin",
+    "vite",
+    "nuxt-module"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./clent": {
+      "types": "./client.d.ts"
+    },
+    "./vite": {
+      "types": "./dist/vite.d.ts",
+      "import": "./dist/vite.mjs",
+      "require": "./dist/vite.js"
+    },
+    "./nuxt": {
+      "types": "./dist/nuxt.d.ts",
+      "import": "./dist/nuxt.mjs",
+      "require": "./dist/nuxt.js"
+    },
+    "./types": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/types.mjs",
+      "require": "./dist/types.js"
+    },
+    "./*": "./*"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./*"
+      ]
+    }
+  },
+  "files": [
+    "client.d.ts",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch src",
+    "build:fix": "esno scripts/postbuild.ts"
+  },
+  "peerDependencies": {
+    "@nuxt/kit": "^3",
+    "@nuxt/schema": "^3",
+    "vite": ">=3"
+  },
+  "peerDependenciesMeta": {
+    "@nuxt/kit": {
+      "optional": true
+    },
+    "@nuxt/schema": {
+      "optional": true
+    },
+    "vite": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "unplugin": "^1.5.1"
+  },
+  "devDependencies": {
+    "@unocss/config": "^0.58.0",
+    "@unocss/core": "^0.58.0",
+    "@unocss/preset-mini": "^0.58.0"
+  }
+}
