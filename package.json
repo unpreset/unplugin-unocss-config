@@ -1,6 +1,5 @@
 {
   "name": "unplugin-unocss-config",
-  "type": "module",
   "version": "0.0.4",
   "packageManager": "pnpm@8.12.0",
   "description": "Use uno config in run-time",
@@ -24,7 +23,7 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
+      "import": "./dist/index.mjs",
       "require": "./dist/index.cjs"
     },
     "./clent": {
@@ -32,23 +31,23 @@
     },
     "./vite": {
       "types": "./dist/vite.d.ts",
-      "import": "./dist/vite.js",
+      "import": "./dist/vite.mjs",
       "require": "./dist/vite.cjs"
     },
     "./nuxt": {
       "types": "./dist/nuxt.d.ts",
-      "import": "./dist/nuxt.js",
+      "import": "./dist/nuxt.mjs",
       "require": "./dist/nuxt.cjs"
     },
     "./types": {
       "types": "./dist/types.d.ts",
-      "import": "./dist/types.js",
+      "import": "./dist/types.mjs",
       "require": "./dist/types.cjs"
     },
     "./*": "./*"
   },
   "main": "dist/index.cjs",
-  "module": "dist/index.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "typesVersions": {
     "*": {
