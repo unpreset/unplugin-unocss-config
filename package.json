@@ -1,5 +1,4 @@
 {
-  "name": "@unplugin-unocss-config/monorepo",
   "type": "module",
   "version": "0.0.10",
   "private": true,
