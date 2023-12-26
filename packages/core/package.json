@@ -82,8 +82,10 @@
     }
   },
   "dependencies": {
-    "@unocss/config": "^0.58.0",
-    "@unocss/core": "^0.58.0",
     "unplugin": "^1.5.1"
+  },
+  "devDependencies": {
+    "@unocss/config": "^0.58.0",
+    "@unocss/core": "^0.58.0"
   }
 }
