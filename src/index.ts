@@ -1,10 +1,9 @@
-import { createUnplugin } from 'unplugin'
 import { createGenerator } from '@unocss/core'
 import { loadConfig } from '@unocss/config'
-import type { ViteDevServer } from 'vite'
+import { type UnpluginFactory, createUnplugin } from 'unplugin'
 import type { Options } from './types'
 
-export default createUnplugin<Options | undefined>((options) => {
+export const unpluginFactory: UnpluginFactory<Options | undefined> = (options) => {
   let uno: ReturnType<typeof createGenerator>
 
   return {
@@ -26,10 +25,9 @@ export default createUnplugin<Options | undefined>((options) => {
           },
         }
       },
-      configureServer(server: ViteDevServer) {
-        // 监听 uno.config.js 文件变化
+      configureServer(server) {
         server.watcher.on('change', async (path) => {
-          if (path.endsWith('uno.config.ts')) {
+          if (path.includes('uno.config.')) {
             uno = createGenerator((await loadConfig(server.config.root, options?.path)).config)
             server.ws.send({
               type: 'custom',
@@ -41,4 +39,8 @@ export default createUnplugin<Options | undefined>((options) => {
       },
     },
   }
-})
+}
+
+export const unplugin = /* #__PURE__ */ createUnplugin(unpluginFactory)
+
+export default unplugin

@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/unplugin-unocss-config?color=a1b858&label=)](https://www.npmjs.com/package/unplugin-unocss-config)
 
-Load your uno config and use it in run-time.
+Use uno config in run-time.
 
 ## Usage
 

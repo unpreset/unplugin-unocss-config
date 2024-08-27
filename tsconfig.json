@@ -5,17 +5,13 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
+    "types": [
+      "vite/client",
+      "./client"
+    ],
     "strict": true,
     "strictNullChecks": true,
     "esModuleInterop": true
   },
-  "exclude": [
-    "**/dist/**",
-    "**/node_modules/**",
-    "**/playground/**",
-    "**/examples/**",
-    "**/fixtures/**",
-    "**/test/dts/**",
-    "**/*.js"
-  ]
+  "exclude": ["dist", "eslint.config.mjs"]
 }
