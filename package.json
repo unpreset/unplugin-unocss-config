@@ -66,8 +66,8 @@
     "dev": "tsup --watch src",
     "build:fix": "esno scripts/postbuild.ts",
     "lint": "eslint .",
-    "play": "npm -C playground run dev",
-    "prepublishOnly": "npm run build",
+    "play": "pnpm -C playground run dev",
+    "prepublishOnly": "pnpm build",
     "release": "bumpp && npm publish",
     "start": "esno src/index.ts",
     "test": "vitest"
@@ -123,5 +123,8 @@
   },
   "lint-staged": {
     "*": "eslint --fix"
+  },
+  "stackblitz": {
+    "startCommand": "pnpm build && pnpm -C playground run dev"
   }
 }
