@@ -11,8 +11,8 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.2",
     "cross-env": "^7.0.3",
-    "unocss": "^0.58.3",
-    "unocss-preset-useful": "^0.3.7",
+    "unocss": "^0.62.3",
+    "unocss-preset-useful": "^0.5.1",
     "unplugin-unocss-config": "workspace:*",
     "vite": "^5.0.10",
     "vite-plugin-inspect": "^0.8.1"
