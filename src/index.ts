@@ -1,6 +1,6 @@
-import { createGenerator } from '@unocss/core'
 import { loadConfig } from '@unocss/config'
-import { type UnpluginFactory, createUnplugin } from 'unplugin'
+import { createGenerator } from '@unocss/core'
+import { createUnplugin, type UnpluginFactory } from 'unplugin'
 import type { Options } from './types'
 
 export const unpluginFactory: UnpluginFactory<Options | undefined> = (options) => {

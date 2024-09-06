@@ -1,8 +1,5 @@
-import {
-  defineConfig,
-  transformerDirectives,
-  transformerVariantGroup,
-} from 'unocss'
+import presetOnu from '@onu-ui/preset'
+import { defineConfig } from 'unocss'
 import { presetUseful } from 'unocss-preset-useful'
 
 export default defineConfig({
@@ -21,10 +18,9 @@ export default defineConfig({
         },
       },
     }),
-  ],
-  transformers: [
-    transformerVariantGroup(),
-    transformerDirectives(),
+    presetOnu({
+      color: '#FF5722',
+    }),
   ],
   preflights: [
     {

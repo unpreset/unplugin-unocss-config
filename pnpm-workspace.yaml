@@ -1,3 +1,34 @@
 packages:
   - playground
-  - 'packages/*'
+  - packages/*
+catalog:
+  '@antfu/eslint-config': ^3.3.2
+  '@types/debug': ^4.1.12
+  '@types/fs-extra': ^11.0.4
+  '@types/node': ^22.5.0
+  '@unocss/config': ^0.62.3
+  '@unocss/core': ^0.62.3
+  '@unocss/preset-mini': ^0.62.3
+  '@vitejs/plugin-vue': ^5.0.2
+  bumpp: ^9.2.1
+  chalk: ^5.3.0
+  cross-env: ^7.0.3
+  debug: ^4.3.4
+  eslint: ^9.9.1
+  esno: ^4.0.0
+  fast-glob: ^3.3.2
+  fs-extra: ^11.2.0
+  lint-staged: ^15.2.0
+  nodemon: ^3.0.2
+  rimraf: ^6.0.1
+  rollup: ^4.9.2
+  simple-git-hooks: ^2.9.0
+  tsup: ^8.0.1
+  typescript: ^5.5.4
+  unocss: ^0.62.3
+  unocss-preset-useful: ^0.5.2
+  vite: ^5.4.2
+  vite-plugin-inspect: ^0.8.1
+  vitest: ^2.0.5
+  vue: ^3.4.3
+  webpack: ^5.94.0

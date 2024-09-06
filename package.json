@@ -1,5 +1,6 @@
 {
   "name": "unplugin-unocss-config",
+  "type": "module",
   "version": "0.1.0",
   "packageManager": "pnpm@9.9.0",
   "description": "Use uno config in run-time",
@@ -22,32 +23,28 @@
   ],
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./vite": {
+      "import": "./dist/vite.js",
+      "require": "./dist/vite.cjs"
+    },
+    "./nuxt": {
+      "import": "./dist/nuxt.js",
+      "require": "./dist/nuxt.cjs"
+    },
+    "./types": {
+      "import": "./dist/types.js",
+      "require": "./dist/types.cjs"
     },
     "./client": {
       "types": "./client.d.ts"
     },
-    "./vite": {
-      "types": "./dist/vite.d.ts",
-      "import": "./dist/vite.mjs",
-      "require": "./dist/vite.js"
-    },
-    "./nuxt": {
-      "types": "./dist/nuxt.d.ts",
-      "import": "./dist/nuxt.mjs",
-      "require": "./dist/nuxt.js"
-    },
-    "./types": {
-      "types": "./dist/types.d.ts",
-      "import": "./dist/types.mjs",
-      "require": "./dist/types.js"
-    },
     "./*": "./*"
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "typesVersions": {
     "*": {
@@ -92,31 +89,31 @@
     "unplugin": "^1.5.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.6.1",
-    "@types/debug": "^4.1.12",
-    "@types/fs-extra": "^11.0.4",
-    "@types/node": "^22.5.0",
-    "@unocss/config": "^0.62.3",
-    "@unocss/core": "^0.62.3",
-    "@unocss/preset-mini": "^0.62.3",
-    "bumpp": "^9.2.1",
-    "chalk": "^5.3.0",
-    "debug": "^4.3.4",
-    "eslint": "^9.9.1",
-    "esno": "^4.0.0",
-    "fast-glob": "^3.3.2",
-    "fs-extra": "^11.2.0",
-    "lint-staged": "^15.2.0",
-    "nodemon": "^3.0.2",
-    "rimraf": "^6.0.1",
-    "rollup": "^4.9.2",
-    "simple-git-hooks": "^2.9.0",
-    "tsup": "^8.0.1",
-    "typescript": "^5.3.3",
+    "@antfu/eslint-config": "catalog:",
+    "@types/debug": "catalog:",
+    "@types/fs-extra": "catalog:",
+    "@types/node": "catalog:",
+    "@unocss/config": "catalog:",
+    "@unocss/core": "catalog:",
+    "@unocss/preset-mini": "catalog:",
+    "bumpp": "catalog:",
+    "chalk": "catalog:",
+    "debug": "catalog:",
+    "eslint": "catalog:",
+    "esno": "catalog:",
+    "fast-glob": "catalog:",
+    "fs-extra": "catalog:",
+    "lint-staged": "catalog:",
+    "nodemon": "catalog:",
+    "rimraf": "catalog:",
+    "rollup": "catalog:",
+    "simple-git-hooks": "catalog:",
+    "tsup": "catalog:",
+    "typescript": "catalog:",
     "unplugin": "^1.6.0",
-    "vite": "^5.0.10",
-    "vitest": "^2.0.5",
-    "webpack": "^5.89.0"
+    "vite": "catalog:",
+    "vitest": "catalog:",
+    "webpack": "catalog:"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"

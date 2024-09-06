@@ -6,12 +6,15 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "types": [
+      "node",
       "vite/client",
       "./client"
     ],
     "strict": true,
     "strictNullChecks": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
   },
   "exclude": ["dist", "eslint.config.mjs"]
 }
